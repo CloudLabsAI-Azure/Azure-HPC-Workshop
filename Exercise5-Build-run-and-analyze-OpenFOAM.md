@@ -75,7 +75,7 @@ The following updates are needed:
 4. Save that file under `motorBike/submit.sh`
 
 5. Run the OpenFOAM job
-Here we ask for 2 node from the node array **hb120v2** using 120 cores on each, and asking to be exclusive on these 2 nodes.
+Here we ask for 2 nodes from the node array **hb120v2** using 120 cores on each, and asking to be exclusive on these 2 nodes.
 
    ```bash
    cd motorBike
@@ -142,12 +142,12 @@ Here we ask for 2 node from the node array **hb120v2** using 120 cores on each, 
 
       ![alt](image/EX5-Task4-step8a.png)
 
-
 12. Next, you can visualize the simulation results.
 
       - Click the "Play" button on the toolbar at the top of the window to advance to the end of the simulation.
-      - On the Active Variables Control toolbar you will find a drop down box where you can select variables. For example, select "p" for pressure.
+      - On the Active Variables Control toolbar you will find a drop-down box where you can select variables. For example, select "p" for pressure.
 
         ![alt](image/EX5-Task4-step8b.png)
 
 13. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.   
+

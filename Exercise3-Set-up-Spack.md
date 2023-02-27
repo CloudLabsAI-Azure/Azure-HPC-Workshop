@@ -111,3 +111,5 @@ In this exercise, you will install and configure Spack from Code Server, as docu
    > **Note**: Verify that gcc 9.2 is referenced in the output.
 
 3. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
+
+

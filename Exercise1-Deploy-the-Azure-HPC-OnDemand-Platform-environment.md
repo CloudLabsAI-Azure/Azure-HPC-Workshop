@@ -26,7 +26,7 @@ In this exercise, you will use Azure Cloud Shell to set up an `az-hop` environme
 
 ### Task 2 : Clone the `az-hop` GitHub repository
 
-1. Run the following commands to clone the public `az-hop` gihub repository in your Cloud Shell session.
+1. Run the following commands to clone the public `az-hop` GitHub repository in your Cloud Shell session.
 
    ```bash
    git clone https://github.com/Azure/az-hop.git -b v1.0.29
@@ -125,7 +125,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
     ![alt](image/EX1-Task5-Step4.png)
 
-6. Enter the followind details:
+6. Enter the following details:
    
     - Enter **hpcadmin (1)** as the user name
     - Select **SSH Private Key from Azure Key Vault (2)** in the **Authentication Type**
@@ -157,7 +157,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
     > **Note** : The Cloud Init step is taking about 40 minutes.
 
-    > **Note**: If installation of telegraf got failed, click on **ctr + c**, and continue with the next task as it will not effect the flow of the lab.
+    > **Note**: If installation of telegraph got failed, click on **ctr + c**, and continue with the next task as it will not affect the flow of the lab.
 
     ![alt](image/EX1-Task6-Step1.png)
 
@@ -186,7 +186,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
     ondemand_fqdn : ondemandk6x4nkh3hhmsux.westeurope.cloudapp.azure.com
     ```
 
-3. The default admin user created on this `az-hop` environment is called `clusteradmin`. To retrieve the password generated and stored in the keyvault, run the following helper script :
+3. The default admin user created on this `az-hop` environment is called `clusteradmin`. To retrieve the password generated and stored in the keyvault, run the following helper script:
    
    ```bash
    ./bin/get_secret clusteradmin
@@ -194,7 +194,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
     > **Note**: Record these values. You'll need them throughout the remainder of this lab.
 
-### Task 8 : Access the `Azure HPC On-Demand Platform` dashboard
+### Task 8: Access the `Azure HPC On-Demand Platform` dashboard
 
 1. From the lab computer, start a web browser, navigate to the URL of the Azure HPC On-Demand Platform portal you identified earlier in this task, and when prompted sign in with the **clusteradmin** user account and its password you identified in the previous step.
 
@@ -219,3 +219,5 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
     ![alt](image/EX1-Task8-Step5.png)
 
 6. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.    
+
+

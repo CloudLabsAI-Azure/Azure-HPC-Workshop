@@ -40,7 +40,6 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
    qsub -l select=1:slot_type=execute -- /usr/bin/bash -c 'sleep 60'
    ```
 
-
    ![alt](image/EX2-Task2-Step2.png)
 
    > **Note**: Be careful when pasting the commands to make sure the exacts characters are used, especially for hyphen.
@@ -100,7 +99,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX1-Task8-Step2.png)
 
-6. In the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, monitor the status of the cluster and note that the number of nodes increased to **2**, which initially are listed in the **acquiring** state. This can takes a minute to come.
+6. In the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, monitor the status of the cluster and note that the number of nodes increased to **2**, which initially are listed in the **acquiring** state. This can take a minute to available.
 
       ![alt](image/EX2-Task3-Step6.png)
 
@@ -146,7 +145,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task3-Step16.png)
 
-17. Select one of the completed job, and in the right panel, under **Folder Contents** click on the **STDIN.o??** file to look at it's content.
+17. Select one of the completed job, and in the right panel, under **Folder Contents** click on the **STDIN.o??** file to look at its content.
 
       ![alt](image/EX2-Task3-Step17a.png)
 
@@ -230,7 +229,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task4-Step14.png)
 
-15. Note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
+15. Note that the scale set hosting the cluster nodes persists but its size is set to **0**.
 
       > **Note**: This will automatically open another web browser tab displaying the output of the job.
 
@@ -325,7 +324,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX3-Task5-Step18a.png)
 
-19. Once the teminal is open, run the below command to validate that GPU is enabled
+19. Once the terminal is open, run the below command to validate that GPU is enabled
 
       ```bash
       nvidia-smi
@@ -340,7 +339,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
       ```
       ![alt](image/EX2-Task5-Step20.png)
 
-20. This is running witout GPU acceleration and should deliver about **40 frames/sec**.
+20. This is running without GPU acceleration and should deliver about **40 frames/sec**.
 
       ![alt](image/EX2-Task5-Step21.png)
 
@@ -352,7 +351,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task5-Step22.png)
 
-22. Performances should be increased to about **400 frames/sec** depending on your screen size, quality and compression options.
+22. Performances should be increased to about **400 frames/sec** depending on your screen size, quality, and compression options.
 
       ![alt](image/EX2-Task5-Step23.png)
 
@@ -367,3 +366,4 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 25. Delete any remaining sessions.
 
 26. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
+

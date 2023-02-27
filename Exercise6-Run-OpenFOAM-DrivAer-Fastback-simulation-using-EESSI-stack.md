@@ -132,7 +132,8 @@ In this exercise you will run and analyze the DrivAer-Fastback CFD simulation wi
 
    ![alt](image/EX6-Task4-task3c.png)
 
-7. On the Active Variables Control toolbar you will find a drop down box where you can select variables. For example, select "p" for pressure.
+7. On the Active Variables Control toolbar you will find a drop-down box where you can select variables. For example, select "p" for pressure.
 
    ![alt](image/EX6-Task4-task3d.png)
+
 
