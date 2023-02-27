@@ -1,0 +1,33 @@
+[ {
+  "Name": "Azure HPC",
+  "Language": "English",
+  "Files": [
+        {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/GettingStarted.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/Exercise1-Deploy-the-Azure-HPC-OnDemand-Platform-environment.md",
+      "Order": 2
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/Exercise2-Review-the-main-az-hop-features.md",
+      "Order": 3
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/Exercise3-Set-up-Spack.md",
+      "Order": 4
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/Exercise4-Build-and-run-OSU-Benchmarks.md",
+      "Order": 5
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/Exercise5-Build-run-and-analyze-OpenFOAM.md",
+      "Order": 6
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/shashankms9/HPC-V2/main/Exercise6-Run-OpenFOAM-DrivAer-Fastback-simulation-using-EESSI-stack.md",
+      "Order": 7
+    }
+} ]
