@@ -174,9 +174,32 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
    ```bash
    sudo su -
    cd /az-hop
+   vi config.yml
+   ```
+   
+2. In the config.yml file replace `vm_size: Standard_NV6` by `vm_size: Standard_NV12s_v3`. To edit the file press `i`.
+   
+   ![alt](image/EX1-Task7-Step1.png)
+   
+   > **Note** : By clicking on down-arrow button navigate to mention VM size.
+
+3. Then press **_ESC_**, write **_:wq_** to save your changes and close the file.
+    
+    >**Note**: If **_ESC_** doesn't work press `ctrl+[` and then write **_:wq_** to save your changes and close the file.     
+
+4. Once the config.yml file is saved run the following command to rerun the **cccluster playbook**.
+   
+   ```bash
+   ./install.sh cccluster 
+   ```
+   
+5. After running cccluster playbook successfully, run the grep command to get the Azure HPC On-Demand Platform URL.
+   
+   ```bash
    grep ondemand_fqdn ./playbooks/group_vars/all.yml
    ```
-2. Copy the **ondemand_fqdn** value and save it in a text editor like notepad as we will using thought out the lab.
+   
+6. Copy the **ondemand_fqdn** value and save it in a text editor like notepad as we will using thought out the lab.
 
    > **Note**: your ondemand_fqdn will look similar to as below.
 
@@ -186,7 +209,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
     ondemand_fqdn : ondemandk6x4nkh3hhmsux.westeurope.cloudapp.azure.com
     ```
 
-3. The default admin user created on this `az-hop` environment is called `clusteradmin`. To retrieve the password generated and stored in the keyvault, run the following helper script:
+7. The default admin user created on this `az-hop` environment is called `clusteradmin`. To retrieve the password generated and stored in the keyvault, run the following helper script:
    
    ```bash
    ./bin/get_secret clusteradmin
@@ -216,7 +239,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
 5. On the **pbs1** page, select the **Arrays** tab, and note that it contains entries representing queue definitions defined in the **/az-hop/config.yml** file.
 
-    ![alt](image/EX1-Task8-Step5.png)
+    ![alt](image/EX1-Task8-Step5a.png)
 
 6. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.    
 
