@@ -88,10 +88,10 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
    az account list-locations -o table
    ```
 
-2. Run the deploy command and pass the resource group name `azhop_quickstart`, replace <location> with **<inject key="Region" />**, and the version of azhop to use.
+2. Run the following command to deploy and pass the resource group name `azhop_quickstart`, the version of azhop to use.
 
    ```bash
-   ./deploy.sh azhop_quickstart <location> v1.0.29
+   ./deploy.sh azhop_quickstart southcentralusstage v1.0.29
    ```
 
    ![alt](image/EX1-Task4-Step2.png)
