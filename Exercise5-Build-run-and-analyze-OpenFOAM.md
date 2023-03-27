@@ -56,6 +56,10 @@ The following updates are needed:
 
 2. Now, create a PBS submit script, **submit.sh** with the following content.
 
+   ```bash
+   vi submit.sh
+   ```
+
 - When running on multiple nodes it is necessary to export all the OpenFOAM environment variables (unless you add loading the modules in `.bashrc`). This is done with the `FOAM_MPIRUN_FLAGS` that are added to the `runParallel` in the last step. The script will run for the number of cores specified to PBS (`select` x `mpiprocs`)
 
    ```bash
