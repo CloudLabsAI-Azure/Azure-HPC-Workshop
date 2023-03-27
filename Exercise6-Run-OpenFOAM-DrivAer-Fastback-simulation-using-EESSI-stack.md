@@ -37,7 +37,13 @@ In this exercise you will run and analyze the DrivAer-Fastback CFD simulation wi
 
 ### Task 2: Submit PBS job
 
-1. Create a PBS submit script as `~/drivaerFastback/submit.sh`. When running on multiple nodes it is necessary to export all the OpenFOAM environment variables (unless you add loading the modules in `.bashrc`). This is done with the `FOAM_MPIRUN_FLAGS` that we added to the `runParallel` in the previous step. The script will run for the number of cores specified to PBS (`select` x `mpiprocs`):
+1. Create a PBS submit script as `~/drivaerFastback/submit.sh`. 
+
+   ```bash
+   vi submit.sh
+   ```
+
+2. When running on multiple nodes it is necessary to export all the OpenFOAM environment variables (unless you add loading the modules in `.bashrc`). This is done with the `FOAM_MPIRUN_FLAGS` that we added to the `runParallel` in the previous step. The script will run for the number of cores specified to PBS (`select` x `mpiprocs`):
 
    ```bash
    #!/bin/bash
@@ -52,14 +58,14 @@ In this exercise you will run and analyze the DrivAer-Fastback CFD simulation wi
    $PBS_O_WORKDIR/Allrun -m M -cores $(wc -l <$PBS_NODEFILE)
    ```
 
-2. Submit the OpenFOAM batch job, requesting our job to be exclusively allocated to two HB120rs_v2 nodes from the node array `hb120v2`:
+3. Submit the OpenFOAM batch job, requesting our job to be exclusively allocated to two HB120rs_v2 nodes from the node array `hb120v2`:
 
    ```bash
    cd ~/drivaerFastback
    qsub -l select=2:slot_type=hb120v2:ncpus=120:mpiprocs=120,place=scatter:excl submit.sh
    ```
 
-3. Monitor the node allocation in CycleCloud and the job until its completion by using the `qstat` command. Log files will be generated in the `~/drivaerFastback` with the pattern `log.*`. Expect the job to run for about 12 minutes.
+4. Monitor the node allocation in CycleCloud and the job until its completion by using the `qstat` command. Log files will be generated in the `~/drivaerFastback` with the pattern `log.*`. Expect the job to run for about 12 minutes.
 
 ### Task 3: Create Linux Desktop session for visualization
 

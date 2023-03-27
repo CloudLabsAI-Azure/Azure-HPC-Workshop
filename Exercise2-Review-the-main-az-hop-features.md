@@ -355,11 +355,13 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task5-Step23.png)
 
-23. Start a new terminal and launch `nvidia-smi` to check the GPU usage which should be about **35%**.
+23. Start a new terminal and run the command `nvidia-smi` to check the GPU usage which should be about **35%**.
 
       ![alt](image/EX3-Task5-Step24.png)
 
       > **Note**: The `vglrun` command can be called for all applications which use Opengl to offload calls to the GPU.
+
+      > **Note**: It will take few minutes to get GPU usage value above 35%.
 
 24. Switch back to the **My Interactive Sessions** launching page and use the **Delete** button to delete the **Linux Desktop** jobs by selecting **Confirm** when prompted.
 
