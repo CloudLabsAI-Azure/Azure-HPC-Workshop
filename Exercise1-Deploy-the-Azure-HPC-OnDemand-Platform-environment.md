@@ -91,7 +91,7 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
 2. Run the following command to deploy and pass the resource group name `azhop_quickstart`, the version of azhop to use.
 
    ```bash
-   ./deploy.sh azhop_quickstart southcentralusstage v1.0.29
+   ./deploy.sh azhop_quickstart southcentralus v1.0.29
    ```
 
    ![alt](image/EX1-Task4-Step2.png)
