@@ -37,11 +37,9 @@ In this exercise you will run and analyze the DrivAer-Fastback CFD simulation wi
 
 ### Task 2: Submit PBS job
 
-1. Create a PBS submit script as `~/drivaerFastback/submit.sh`. 
+1. From the VS Code Explorer, right click on **drivaerFastback** folder, select **New File**, and name it as **submit.sh**. 
 
-   ```bash
-   vi submit.sh
-   ```
+   ![alt](image/EX6-Task2-Step1.png)
 
 2. When running on multiple nodes it is necessary to export all the OpenFOAM environment variables (unless you add loading the modules in `.bashrc`). This is done with the `FOAM_MPIRUN_FLAGS` that we added to the `runParallel` in the previous step. The script will run for the number of cores specified to PBS (`select` x `mpiprocs`):
 
