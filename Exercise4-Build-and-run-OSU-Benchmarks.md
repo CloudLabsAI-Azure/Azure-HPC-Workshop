@@ -32,14 +32,11 @@ This will download the source packages and build them in your environment.
 
 ### Task 2: Create the run script
 
-1. At the root of the home directory, create a file named **osu_benchmarks.sh** with this content
+1. In VS Code Explorer click on **New File** it will create a file named it as **osu_benchmarks.sh** with this content.
 
-    ```bash
-    sudo su -
-    vi osu_benchmarks.sh
-    ```
+   ![alt](image/EX4-Task2-Step1.png)
 
-2. Paste the below script.
+2. Paste the below script in the work space.
 
     ```bash
     #!/bin/bash
@@ -51,14 +48,14 @@ This will download the source packages and build them in your environment.
     mpirun -x PATH --hostfile $PBS_NODEFILE --map-by ppr:1:node --bind-to core --report-bindings $BENCH
     ```
     
-3. Then press **_ESC_**, write **_:wq_** to save your changes and close the file.
+    ![alt](image/EX4-Task2-Step2.png)
     
-    >**Note**: If **_ESC_** doesn't work press `ctrl+[` and then write **_:wq_** to save your changes and close the file.
-
-4. Enable execution for this script
+3. Run the following command in **Terminal**, it enable execution for this script.
 
     ```bash
-    chmod +x ~/osu_benchmarks.sh
+    sudo su -
+    cd /anfhome/clusteradmin/
+    chmod +x osu_benchmark.sh
     exit
     ```
 

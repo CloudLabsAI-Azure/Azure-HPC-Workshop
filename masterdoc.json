@@ -23,12 +23,8 @@
       "Order": 5
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise5-Build-run-and-analyze-OpenFOAM.md",
-      "Order": 6
-    },
-    {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise6-Run-OpenFOAM-DrivAer-Fastback-simulation-using-EESSI-stack.md",
-      "Order": 7
+      "Order": 6
     }
   ]
 } ]
