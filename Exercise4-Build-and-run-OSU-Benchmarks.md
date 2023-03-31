@@ -34,7 +34,7 @@ This will download the source packages and build them in your environment.
 
 1. In vscode Explorer click on **New File** it will create a file named it as **osu_benchmarks.sh** with this content.
 
-   ![alt](image/EX4-Task2-step1.png)
+   ![alt](image/EX4-Task2-Step1.png)
 
 2. Paste the below script in the work space.
 
@@ -48,7 +48,7 @@ This will download the source packages and build them in your environment.
     mpirun -x PATH --hostfile $PBS_NODEFILE --map-by ppr:1:node --bind-to core --report-bindings $BENCH
     ```
     
-    ![alt](image/EX4-Task2-step2.png)
+    ![alt](image/EX4-Task2-Step2.png)
     
 3. Run the following command in **Terminal**, it enable execution for this script.
 
