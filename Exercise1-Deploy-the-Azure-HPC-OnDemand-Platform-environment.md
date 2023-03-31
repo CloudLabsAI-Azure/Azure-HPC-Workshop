@@ -20,9 +20,6 @@ In this exercise, you will use Azure Cloud Shell to set up an `az-hop` environme
 
     ![alt](image/EX1-Task1-Step2note.png)
 
-3. In the **Bash** session, in the **Cloud Shell** pane, run the following command to select the Azure subscription in which you will provision the Azure resources in this lab. In the following command, replace the `<subscription_ID>` placeholder with the value of the **subscriptionID** property of the Azure subscription you are using in this lab.
-
-4. Run the `az account show` to display the current account and subscription used.
 
 ### Task 2 : Clone the `az-hop` GitHub repository
 
@@ -33,7 +30,24 @@ In this exercise, you will use Azure Cloud Shell to set up an `az-hop` environme
    ```
    
     ![alt](image/EX1-Task2-Step1.png)
+    
+2. Fix the install.sh script in the `deploy/resources` folder.  
 
+    ```bash
+    cd az-hop/deploy/resources/
+    nano install.sh
+    ```
+
+3. Change the `install.sh` script from `git clone --recursive https://github.com/Azure/az-hop.git` to below line.
+
+    ```bash
+    git clone --recursive https://github.com/Azure/az-hop.git -b v1.0.29
+    ```
+
+    ![alt](image/EX1-Task3-Step4.png)
+
+4. To save the changes, press `CTRL + O`, then hit `Enter`, and exit the file using `CTRL + X`. After saving the file, change the directory by running the `cd` command.
+    
 ### Task 3 : Prepare the configuration file used to build the `az-hop` environment
 
 In this task, you will prepare the `build.yml` file used by the deploy helper script in order to build the `az-hop` environment.
@@ -47,8 +61,6 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
    
 2. Review the `build.yml` file content, which describe the resources that will be provisioned. In addition to these an Azure Bastion will also be automatically created to be used to connect securely to this environment.
 
-    > **Note** : If your subscription policy requires you to run without public IP then update your `build.yml` configuration file and set `vms.ondemand.pip` to `false`.
-
 3. Run the pre-requisites script to install any missing components.
 
    ```bash
@@ -57,27 +69,7 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
    ```
 
    ![alt](image/EX1-Task3-Step2.png)
-
-4. Fix the install.sh script in the `deploy/resources` folder.  
-
-    ```bash
-    cd resources
-    vi install.sh
-    ```
-
-5. Change the `install.sh` script from `git clone --recursive https://github.com/Azure/az-hop.git` to below line. To edit the file press `i`.
-
-    ```bash
-    git clone --recursive https://github.com/Azure/az-hop.git -b v1.0.29
-    ```
-
-    ![alt](image/EX1-Task3-Step4.png)
-
-6. Then press **_ESC_**, write **_:wq_** to save your changes and close the file. Once the file is saved run `cd ..` to change the directory.
     
-    >**Note**: If **_ESC_** doesn't work press `ctrl+[` and then write **_:wq_** to save your changes and close the file.     
-    
-
 ### Task 4 : Deploy the environment
 
 1. Retrieve the azure location name in which you will deploy this environment by running this command.
@@ -95,6 +87,14 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
    ```
 
    ![alt](image/EX1-Task4-Step2.png)
+   
+   > **Note**: The resources are only deployed in the southcentralus region.
+
+   > **Note**: If you encounter  **Parameter file doesn't exists, create it** error while deploying the resouces, run the following command. 
+      ```bash
+      ./pre-reqs.sh
+      ```
+   > **Note**: Once the command is run successfully, perform the **step 2** to redeploy the resources.
 
 While the deployment is in progress, you can check the resource group content from the Azure portal and the status of the deployment thru the link at the right of the `Deployments` property. The deployment should be done in about 8 minutes.
 
@@ -115,7 +115,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
 3. Select the resource group you have created with the name `azhop_quickstart`.
 
-    ![alt](image/EX1-Task5-Step2b.png)
+    ![alt](image/EX1-Task5-Step3a.png)
 
 4. In search bar enter deployer, click on the **deployer** Virtual machine.
 
@@ -174,32 +174,34 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
    ```bash
    sudo su -
    cd /az-hop
-   vi config.yml
+   nano config.yml
    ```
    
-2. In the config.yml file replace `vm_size: Standard_NV6` by `vm_size: Standard_NV12s_v3`. To edit the file press `i`.
+2. In the config.yml file replace `vm_size: Standard_NV6` by `vm_size: Standard_NV12s_v3`.
    
    ![alt](image/EX1-Task7-Step1.png)
    
    > **Note** : By clicking on down-arrow button navigate to mention VM size.
 
-3. Then press **_ESC_**, write **_:wq_** to save your changes and close the file.
-    
-    >**Note**: If **_ESC_** doesn't work press `ctrl+[` and then write **_:wq_** to save your changes and close the file.     
+3. In the same file replace all `spot: true` to `spot: false`.
 
-4. Once the config.yml file is saved run the following command to rerun the **cccluster playbook**.
+   ![alt](image/EX1-Task7-Step3.png)
+
+4. To save the changes, press `CTRL + O`, then hit `Enter`, and exit the file using `CTRL + X`.  
+
+5. Once the config.yml file is saved run the following command to rerun the **cccluster playbook**.
    
    ```bash
    ./install.sh cccluster 
    ```
    
-5. After running cccluster playbook successfully, run the grep command to get the Azure HPC On-Demand Platform URL.
+6. After running cccluster playbook successfully, run the grep command to get the Azure HPC On-Demand Platform URL.
    
    ```bash
    grep ondemand_fqdn ./playbooks/group_vars/all.yml
    ```
    
-6. Copy the **ondemand_fqdn** value and save it in a text editor like notepad as we will using thought out the lab.
+7. Copy the **ondemand_fqdn** value and save it in a text editor like notepad as we will using thought out the lab.
 
    > **Note**: your ondemand_fqdn will look similar to as below.
 
@@ -209,7 +211,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
     ondemand_fqdn : ondemandk6x4nkh3hhmsux.westeurope.cloudapp.azure.com
     ```
 
-7. The default admin user created on this `az-hop` environment is called `clusteradmin`. To retrieve the password generated and stored in the keyvault, run the following helper script:
+8. The default admin user created on this `az-hop` environment is called `clusteradmin`. To retrieve the password generated and stored in the keyvault, run the following helper script:
    
    ```bash
    ./bin/get_secret clusteradmin
