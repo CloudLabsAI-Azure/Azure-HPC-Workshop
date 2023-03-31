@@ -32,7 +32,7 @@ This will download the source packages and build them in your environment.
 
 ### Task 2: Create the run script
 
-1. In vscode Explorer click on **New File** it will create a file named it as **osu_benchmarks.sh** with this content.
+1. In VS Code Explorer click on **New File** it will create a file named it as **osu_benchmarks.sh** with this content.
 
    ![alt](image/EX4-Task2-Step1.png)
 
