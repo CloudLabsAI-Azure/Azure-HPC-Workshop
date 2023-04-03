@@ -40,7 +40,9 @@
    
 1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-    ![](image/gettingstart06.png "Resource groups")
+    ![](image/Getstart8a.png "Resource groups")
+    
+    > **Hint**: To view **Resource groups**, you may need to scroll down 
    
 1. Confirm you have a resource group present with name **Azure-hpc**.
 
