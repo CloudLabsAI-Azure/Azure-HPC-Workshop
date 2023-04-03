@@ -6,20 +6,13 @@ In this exercise, you will use Azure Cloud Shell to set up an `az-hop` environme
 
 ### Task 1: Connect to a Cloud Shell session
 
-1. From the lab computer, start a web browser, navigate to [the Azure portal](http://portal.azure.com), and if not already signed in, sign in with below credentials.
-
-    **Email**: <inject key="AzureAdUserEmail"></inject>
-    
-    **Password**: <inject key="AzureAdUserPassword"></inject>
-
-2. In the Azure portal, click on **Cloud Shell (1)** and in select either Bash or PowerShell, select **Bash (2)**.
+1. In the Azure portal, click on **Cloud Shell (1)** and in select either Bash or PowerShell, select **Bash (2)**.
 
     ![alt](image/EX1-Task1-Step2.png)
 
-   > **Note** : If prompted, in the **Welcome to Azure Cloud Shell** window, select **Bash (Linux)**, and in the **You have no storage mounted** window, select **Create storage**.
+2. In the **You have no storage mounted** window, click on **Create storage**.
 
     ![alt](image/EX1-Task1-Step2note.png)
-
 
 ### Task 2 : Clone the `az-hop` GitHub repository
 
@@ -221,7 +214,9 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
 ### Task 8: Access the `Azure HPC On-Demand Platform` dashboard
 
-1. From the lab computer, start a web browser, navigate to the URL of the Azure HPC On-Demand Platform portal you identified earlier in this task, and when prompted sign in with the **clusteradmin** user account and its password you identified in the previous step.
+   > **Info**: It is possible to access `Azure HPC On-Demand Platform` through a browser directly on your local machine for better performance.
+
+1. From the lab computer, start a web browser, navigate to the URL of the **Azure HPC On-Demand Platform** portal you identified earlier in this task (it look similar to `ondemandk6x4nkh3hhmsux.westeurope.cloudapp.azure.com`), and when prompted sign in with the **clusteradmin** user account and its password you identified in the previous step.
 
     ![alt](image/EX1-Task8-Step1.png)
 
