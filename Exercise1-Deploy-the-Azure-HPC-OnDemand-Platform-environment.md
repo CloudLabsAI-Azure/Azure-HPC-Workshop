@@ -43,7 +43,7 @@ In this exercise, you will use Azure Cloud Shell to set up an `az-hop` environme
     
 ### Task 3 : Prepare the configuration file used to build the `az-hop` environment
 
-In this task, you will prepare the `build.yml` file used by the deploy helper script in order to build the `az-hop` environment.
+In this task, you will prepare the `build.yml` file used by the deploy helper script to build the `az-hop` environment.
 
 1. Change directory into the deploy folder and copy the build template file.
 
@@ -196,7 +196,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
    
 7. Copy the **ondemand_fqdn** value and save it in a text editor like notepad as we will using thought out the lab.
 
-   > **Note**: your ondemand_fqdn will look similar to as below.
+   > **Note**: your ondemand_fqdn will look like as below.
 
      ![alt](image/EX1-Task7-Step2.png)
 
@@ -216,7 +216,7 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
 
    > **Info**: It is possible to access `Azure HPC On-Demand Platform` through a browser directly on your local machine for better performance.
 
-1. From the lab computer, start a web browser, navigate to the URL of the **Azure HPC On-Demand Platform** portal you identified earlier in this task (it look similar to `ondemandk6x4nkh3hhmsux.westeurope.cloudapp.azure.com`), and when prompted sign in with the **clusteradmin** user account and its password you identified in the previous step.
+1. From the lab computer, start a web browser, navigate to the URL of the **Azure HPC On-Demand Platform** portal you identified earlier in this task (it looks similar to `ondemandk6x4nkh3hhmsux.westeurope.cloudapp.azure.com`), and when prompted sign in with the **clusteradmin** user account and its password you identified in the previous step.
 
     ![alt](image/EX1-Task8-Step1.png)
 
@@ -239,5 +239,4 @@ In this task you will connect to the Deployer VM thru Azure Bastion to monitor t
     ![alt](image/EX1-Task8-Step5a.png)
 
 6. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.    
-
 
