@@ -145,7 +145,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task3-Step16.png)
 
-17. Select one of the completed job, and in the right panel, under **Folder Contents** click on the **STDIN.o??** file to look at its content.
+17. Select one of the completed jobs, and in the right panel, under **Folder Contents** click on the **STDIN.o??** file to look at its content.
 
       ![alt](image/EX2-Task3-Step17a.png)
 
@@ -157,7 +157,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
 19. In the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, on the **pbs1** page, select the **Scalesets** tab.
 
-20. Note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
+20. Note that the scale set hosting the cluster nodes persists but its size is set to **0**.
 
       ![alt](image/EX2-Task3-Step20.png)
 
@@ -189,7 +189,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task4-Step6.png)
 
-7. Create two additional jobs based on the **Intel MPI PingPong** job by expanding the **+ New Job** button and chosing the **From Selected Job**.
+7. Create two additional jobs based on the **Intel MPI PingPong** job by expanding the **+ New Job** button and choosing the **From Selected Job**.
 
       ![alt](image/EX2-Task4-Step7.png)
 
@@ -229,7 +229,7 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 
       ![alt](image/EX2-Task4-Step14.png)
 
-15. Note that the scale set hosting the cluster nodes persists but its size is set to **0**.
+15. Note that the scale set hosting the cluster nodes persists, but its size is set to **0**.
 
       > **Note**: This will automatically open another web browser tab displaying the output of the job.
 
@@ -368,4 +368,3 @@ In this exercise, you will review the main features of the Azure HPC OnDemand Pl
 25. Delete any remaining sessions.
 
 26. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
-
