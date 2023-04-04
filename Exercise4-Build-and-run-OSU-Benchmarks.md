@@ -36,7 +36,7 @@ This will download the source packages and build them in your environment.
 
    ![alt](image/EX4-Task2-Step1.png)
 
-2. Paste the below script in the work space.
+2. Paste the below script in the workspace.
 
     ```bash
     #!/bin/bash
@@ -50,7 +50,7 @@ This will download the source packages and build them in your environment.
     
     ![alt](image/EX4-Task2-Step2.png)
     
-3. Run the following command in **Terminal**, it enable execution for this script.
+3. Run the following command in **Terminal**, it enables execution for this script.
 
     ```bash
     sudo su -
