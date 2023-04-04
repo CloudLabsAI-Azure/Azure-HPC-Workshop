@@ -1,4 +1,4 @@
-## Exercise 6: Run OpenFOAM DrivAer-Fastback simulation using EESSI stack
+## Exercise 5: Run OpenFOAM DrivAer-Fastback simulation using EESSI stack
 
 The Az-HOP deployment in this tutorial comes with the [EESSI software stack](https://eessi.github.io/docs) pre-configured on all compute nodes.
 In this exercise you will run and analyze the DrivAer-Fastback CFD simulation with 3 million cells without having to build OpenFOAM by using `OpenFOAM/9-foss-2021a` available in EESSI.
