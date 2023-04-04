@@ -22,7 +22,7 @@
 
 1. In the Welcome to Microsoft Edge page, select **Start without your data** and on the help for importing Google browsing data page select **Continue without this data** button and proceed to select **Confirm and start browsing** on the next page.
    
-1. On **Sign in to Microsoft Azure** tab you will see login screen, enter following email/username and then click on **Next**. 
+1. On **Sign into Microsoft Azure** tab you will see login screen, enter following email/username and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    
      ![](image/gettingstart04.png "Enter Email")
@@ -42,7 +42,7 @@
 
     ![](image/Getstart8a.png "Resource groups")
     
-    > **Hint**: To view **Resource groups**, you may need to scroll down 
+    > **Hint**: To view **Resource groups**, you may need to scroll down. 
    
 1. Confirm you have a resource group present with name **Azure-hpc**.
 
