@@ -34,7 +34,7 @@ This will download the source packages and build them in your environment.
 
 1. In VS Code Explorer click on **New File** it will create a file named it as **osu_benchmarks.sh** with this content.
 
-   ![alt](image/EX4-Task2-Step1.png)
+   ![alt](image/EX4-Task2-step1.png)
 
 2. Paste the below script in the workspace.
 
