@@ -40,6 +40,10 @@ In this exercise you will run and analyze the DrivAer-Fastback CFD simulation wi
 1. From the VS Code Explorer, right click on **drivaerFastback** folder, select **New File**, and name it as **submit.sh**. 
 
    ![alt](image/EX6-Task2-Step1.png)
+   
+   > **Note**: **Refresh Explorer** if you are unable to see the **driverFastback** folder. 
+
+      ![alt](image/EX6-Task2-step1note.png)
 
 2. When running on multiple nodes it is necessary to export all the OpenFOAM environment variables (unless you add loading the modules in `.bashrc`). This is done with the `FOAM_MPIRUN_FLAGS` that we added to the `runParallel` in the previous step. The script will run for the number of cores specified to PBS (`select` x `mpiprocs`):
 
@@ -126,11 +130,11 @@ In this exercise you will run and analyze the DrivAer-Fastback CFD simulation wi
       - `patch/rearWheels`
    - Click "Apply" above the list
 
-      ![alt](image/EX6-Task4-task3a.png)
+      ![alt](image/EX6-Task4-step5a.png)
 
    - You should now see the model geometry, and you can move/rotate/zoom using the mouse
 
-      ![alt](image/EX6-Task4-task3b.png)
+      ![alt](image/EX6-Task4-step5b.png)
 
 6. To visualize the simulation results, click the "Play" button on the toolbar at the top of the window to advance to the end of the simulation.
 
