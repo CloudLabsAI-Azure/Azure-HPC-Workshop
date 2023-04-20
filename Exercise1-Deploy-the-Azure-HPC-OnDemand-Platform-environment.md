@@ -37,9 +37,13 @@ In this exercise, you will use Azure Cloud Shell to set up an `az-hop` environme
     git clone --recursive https://github.com/Azure/az-hop.git -b v1.0.29
     ```
 
-    ![alt](image/EX1-Task3-Step4.png)
+    ![alt](image/EX1-Task2-step3.png)
 
-4. To save the changes, press `CTRL + O`, then hit `Enter`, and exit the file using `CTRL + X`. After saving the file, change the directory by running the `cd` command.
+4. To save the changes, press `CTRL + O`, then hit `Enter`, and exit the file using `CTRL + X`. 
+
+5. After saving the file, change the directory by running the `cd` command.
+
+    ![alt](image/EX1-Task2-step5.png)
     
 ### Task 3 : Prepare the configuration file used to build the `az-hop` environment
 
@@ -78,20 +82,26 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
    ```bash
    ./deploy.sh azhop_quickstart southcentralus v1.0.29
    ```
-
-   ![alt](image/EX1-Task4-Step2.png)
    
-   > **Note**: The resources are only deployed in the southcentralus region.
+   > **Note**: There are a few SKUs supported in the southcentralus region.
 
-   > **Note**: If you encounter  **Parameter file doesn't exists, create it** error while deploying the resouces, run the following command. 
-      ```bash
+    ![alt](image/EX1-Task4-step2.png)
+   
+   > **Note**: Follow **Steps 3 and 4** if the deployment got fail, otherwise continue with **Task 5**.
+
+3. If you encounter  **Parameter file doesn't exists, create it** error while deploying the resouces, run the following command. 
+     
+     ```bash
       ./pre-reqs.sh
       ```
-   > **Note**: Once the command is run successfully, perform the **step 2** to redeploy the resources.
+      
+      ![alt](image/EX1-Task4-step3.png)
+      
+4. Once the command is run successfully, perform the **step 2** to redeploy the resources.
 
 While the deployment is in progress, you can check the resource group content from the Azure portal and the status of the deployment thru the link at the right of the `Deployments` property. The deployment should be done in about 8 minutes.
 
-Once the deployment is done, you can now access the deployer VM thru Azure Bastion
+Once the deployment is done, you can now access the deployer VM thru Azure Bastion.
 
 ### Task 5 : Connect to the `deployer` VM thru Azure Bastion
 In this task you will connect to the Deployer VM thru Azure Bastion to monitor the Ansible playbooks progress.
