@@ -79,7 +79,7 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
 
     ![alt](image/EX1-Task4-step2.png)
    
-   > **Note**: Follow **Steps 3 and 4** if the deployment got fail, otherwise continue with **Task 5**.
+   > **Note**: Follow **Steps 2 and 3** if the deployment got fail, otherwise continue with **Task 5**.
 
 2. If you encounter  **Parameter file doesn't exists, create it** error while deploying the resouces, run the following command. 
      
@@ -89,7 +89,7 @@ In this task, you will prepare the `build.yml` file used by the deploy helper sc
       
       ![alt](image/EX1-Task4-step3.png)
       
-3. Once the command is run successfully, perform the **step 2** to redeploy the resources.
+3. Once the command is run successfully, perform the **step 1** to redeploy the resources.
 
 While the deployment is in progress, you can check the resource group content from the Azure portal and the status of the deployment thru the link at the right of the `Deployments` property. The deployment should be done in about 8 minutes.
 
