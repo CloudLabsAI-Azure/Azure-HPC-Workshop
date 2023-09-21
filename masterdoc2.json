@@ -1,0 +1,18 @@
+[ {
+  "Name": "Azure HPC",
+  "Language": "English",
+  "Files": [
+        {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/GettingStarted.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise1-Deploy-the-Azure-HPC-OnDemand-Platform-environment.md",
+      "Order": 2
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise2-Review-the-main-az-hop-features.md",
+      "Order": 3
+    }
+  ]
+} ]
