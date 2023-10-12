@@ -3,27 +3,27 @@
   "Language": "English",
   "Files": [
         {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/GettingStarted.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/GettingStarted.md",
       "Order": 1
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise1-Deploy-the-Azure-HPC-OnDemand-Platform-environment.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise1-Deploy-the-Azure-HPC-OnDemand-Platform-environment.md",
       "Order": 2
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise2-Review-the-main-az-hop-features.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise2-Review-the-main-az-hop-features.md",
       "Order": 3
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise3-Set-up-Spack.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise3-Set-up-Spack.md",
       "Order": 4
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise4-Build-and-run-OSU-Benchmarks.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise4-Build-and-run-OSU-Benchmarks.md",
       "Order": 5
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise6-Run-OpenFOAM-DrivAer-Fastback-simulation-using-EESSI-stack.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Azure-HPC-Workshop/main/Exercise6-Run-OpenFOAM-DrivAer-Fastback-simulation-using-EESSI-stack.md",
       "Order": 6
     }
   ]
