@@ -1,6 +1,6 @@
-# Getting Started with Your Azure API Management Workshop
+# Getting Started with Your Azure HPC Workshop
  
-Welcome to your Azure API Management workshop! We've prepared a seamless environment for you to explore and learn about Azure API Management. Let's begin by making the most of this experience:
+Welcome to your Azure HPC workshop! We've prepared a seamless environment for you to explore and learn about Azure high-performance computing. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
